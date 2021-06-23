@@ -10,6 +10,7 @@
     <!-- CSS -->
       <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;400;700&display=swap" rel="stylesheet">
@@ -54,7 +55,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/Avatar.svg" alt="avatar">
+                                <img src="assets/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 Perguntinha hihi?
@@ -70,12 +71,63 @@
                                 Excluir
                             </a>
                         </div>
-
                     </div>
-
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                               Mais uma Perguntinha hihi?
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                               Ota Perguntinha hihi?
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="delete">
+                                <img src="assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir Pergunta</h2>
+                <p>Tem certeza que você deseja excluir está pergunta?</p>
+                <form action="#" method="post">
+                    <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                    <input type="password" name="password" placeholder="Digite sua senha"/>
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
   </body>
 
 </html>
